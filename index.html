@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Lab Report</title>
+
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-
-    <meta http-equiv="refresh" content="0; url=labReport1.pdf">
 </head>
 
 <body>
+
     <p>Opening latest lab report...</p>
-    <a href="labReport1.pdf">Open Lab Report</a>
+
+    <script>
+        const pdfUrl = "labReport1.pdf?v=" + Date.now();
+        window.location.replace(pdfUrl);
+    </script>
+
+    <noscript>
+        <a href="labReport1.pdf">Open Lab Report</a>
+    </noscript>
+
 </body>
 </html>
